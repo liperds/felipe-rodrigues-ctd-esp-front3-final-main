@@ -13,9 +13,7 @@ export default function SuccessFullOrder() {
                 <title>Marvel - Aproveite sua compra!</title>
             </Head>
             <Container sx={{
-                width: '500px', height: '100px', margin: '20px auto', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#00a000', color: 'white',
-                borderRadius: '30px'
-            }}>
+                width: '400px', height: '100px', margin: '15px auto', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#551dec', color: 'white', borderRadius: '35px'}}>
                 <Typography
                     gutterBottom
                     noWrap
@@ -26,7 +24,7 @@ export default function SuccessFullOrder() {
                 </Typography>
             </Container >
 
-            <Container sx={{ gap: '20px', margin: '20px', display: 'flex', flexDirection: 'column' }}>
+            <Container sx={{ gap: '20px', margin: '20px', display: 'flex', flexDirection: 'column', width:"350px" }}>
                 <Typography
                     gutterBottom
                     noWrap
@@ -36,9 +34,10 @@ export default function SuccessFullOrder() {
                     {order?.title}
                 </Typography>
 
-                <CardMedia sx={{ borderRadius: '30px' }}
+                <CardMedia sx={{ borderRadius: '25px', boxShadow:"20px -12px 13px -1px rgb(151 117 245)" }}
                     component="img"
-                    height="500"
+                    width="52%"
+                    height="250"
                     image={`${order?.path}.${order?.extension}`}
                     alt={order?.title}
                 />

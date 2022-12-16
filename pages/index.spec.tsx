@@ -18,9 +18,9 @@ describe("IndexPage", () => {
         );
 
         const title = screen.getByText(/Seja bem vindo ao DH Marvel/i);
-        const buttonloadingMoreComics = screen.getByRole('button', { name: "Carregar mais + 12..." })
+        const buttonloadingMoreComics = screen.getByRole('button', { name: "Carregar - 12...." })
         await userEvent.click(buttonloadingMoreComics)
-        const buttonloadingLessComics = screen.getByRole('button', { name: "Carregar menos - 12..." })
+        const buttonloadingLessComics = screen.getByRole('button', { name: "Carregar + 12...." })
         await userEvent.click(buttonloadingLessComics)
 
 

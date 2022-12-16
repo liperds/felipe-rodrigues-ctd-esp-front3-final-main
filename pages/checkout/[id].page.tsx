@@ -271,7 +271,7 @@ export default function Checkout({ data }: PropsDetails) {
             </Typography>
 
             <Container sx={{ margin: '20px', display: 'flex', flexDirection: 'row' }}>
-                <CardMedia sx={{ width: '200px', borderRadius: '30px' }}
+                <CardMedia sx={{ width: '250px', borderRadius: '50px', boxShadow:"20px -12px 13px -1px rgb(151 117 245)"  }}
                     component="img"
                     height="200"
                     image={`${comic?.thumbnail.path}.${comic?.thumbnail.extension}`}
