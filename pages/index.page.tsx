@@ -36,15 +36,16 @@ export default function Home() {
         noWrap
         variant="h3"
         component="div"
+        color="#551dec"
       >
         Seja bem vindo ao DH Marvel
       </Typography>
 
 
-      <Box sx={{ flexGrow: 1, margin: '20px' }}>
+      <Box sx={{ flexGrow: 1, margin: '20px',  }}>
         <Grid sx={{ justifyContent: 'center' }} container spacing={2}>
           {data?.data?.results.map((comic: Comic) => (
-            <Grid key={comic.id} width={350} item >
+            <Grid sx={{  }}  key={comic.id} width={230} item >
               <Typography
                 gutterBottom
                 noWrap
@@ -54,7 +55,9 @@ export default function Home() {
                 {comic.title}
               </Typography>
               <CardMedia
+                sx={{borderRadius:"30px", boxShadow:"20px -12px 13px -1px rgb(151 117 245)"}}  
                 component="img"
+                max-width="230"
                 height="194"
                 image={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
                 alt={comic.title}
@@ -64,7 +67,7 @@ export default function Home() {
                   <Button variant="contained">Comprar</Button>
                 </Link>
                 <Link href={`/comic/${comic.id}`}>
-                  <Button variant="outlined">
+                  <Button  variant="outlined">
                     Detalhes
                   </Button>
                 </Link>
