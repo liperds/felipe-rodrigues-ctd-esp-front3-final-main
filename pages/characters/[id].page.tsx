@@ -6,7 +6,7 @@ import { Comic, Character } from "shared/types/apiSchema"
 
 export const getStaticPaths = async () => {
     return {
-        paths: [{ params: { id: "10200" } }],
+        paths: [{ params: { id: "1009176" } }],
         fallback: true
     };
 }
